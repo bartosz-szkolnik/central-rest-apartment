@@ -16,7 +16,7 @@ export function ContactInfo() {
         <Subtitle underline={false}>Contact Info:</Subtitle>
         <Paragraph className="mt-4 text-center text-[18px]">
           <span className="font-bold">WhatsApp Number: </span>
-          <ExternalLink href="https://api.whatsapp.com/send?phone=48691699606">0048 691699606 asd</ExternalLink>
+          <ExternalLink href="https://api.whatsapp.com/send?phone=48691699606">0048 691699606</ExternalLink>
         </Paragraph>
         <Paragraph className="mt-2 text-center text-[18px]">
           <span className="font-bold">Local Number in Paphos: </span>

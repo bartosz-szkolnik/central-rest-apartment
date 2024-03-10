@@ -8,12 +8,12 @@ export default function Home() {
   return (
     <main>
       <Hero></Hero>
-      <article className="mx-auto flex max-w-[1600px] flex-col gap-y-12">
+      <div className="mx-auto flex max-w-[1600px] flex-col gap-y-12">
         <AboutTheApartment></AboutTheApartment>
         <Interior></Interior>
         <TouristAttractions></TouristAttractions>
         <ContactInfo></ContactInfo>
-      </article>
+      </div>
     </main>
   );
 }

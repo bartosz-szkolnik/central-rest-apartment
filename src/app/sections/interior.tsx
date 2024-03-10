@@ -16,53 +16,52 @@ export function Interior() {
   return (
     <section className="relative mx-4 mt-2 pt-8 before:absolute before:left-1/2 before:h-[2px] before:w-20 before:-translate-x-1/2 before:bg-separator before:content-['']">
       <div className="mt-4">
-        <Title text="Interior: "></Title>
+        <Title>Interior: </Title>
         <div className="flex justify-center">
-          <Paragraph
-            className="mt-2 text-center text-sm md:w-3/4"
-            text="The apartment is equipped with 2 bedrooms, 1 living room, 1 bathroom, 1 kitchen. This property offers access
-          to 2 balconies, the bigger balcony, is equipped with a table and four chairs and has partial sea views. Free
-          private parking, air-conditioned with free Wi-Fi, furnished with 2 flat-screen TV. Facilities included: double
-          fitted wardrobes, equipped kitchen with bar style-seated dining area. Bed linen, bath and hand towels are
-          provided."
-          ></Paragraph>
+          <Paragraph className="mt-2 text-center text-sm md:w-3/4">
+            The apartment is equipped with 2 bedrooms, 1 living room, 1 bathroom, 1 kitchen. This property offers access
+            to 2 balconies, the bigger balcony, is equipped with a table and four chairs and has partial sea views. Free
+            private parking, air-conditioned with free Wi-Fi, furnished with 2 flat-screen TV. Facilities included:
+            double fitted wardrobes, equipped kitchen with bar style-seated dining area. Bed linen, bath and hand towels
+            are provided.
+          </Paragraph>
         </div>
       </div>
 
       <PairImages
         subtitle="The Living Room"
-        image1Src={LivingRoom1}
-        image1Alt=""
-        image2Src={LivingRoom2}
-        image2Alt=""
+        images={[
+          { src: LivingRoom1, alt: '' },
+          { src: LivingRoom2, alt: '' },
+        ]}
       ></PairImages>
       <PairImages
         subtitle="The Kitchen"
-        image1Src={Kitchen1}
-        image1Alt=""
-        image2Src={Kitchen2}
-        image2Alt=""
+        images={[
+          { src: Kitchen1, alt: '' },
+          { src: Kitchen2, alt: '' },
+        ]}
       ></PairImages>
       <PairImages
         subtitle="First Bedroom"
-        image1Src={FirstBedroom1}
-        image1Alt=""
-        image2Src={FirstBedroom2}
-        image2Alt=""
+        images={[
+          { src: FirstBedroom1, alt: '' },
+          { src: FirstBedroom2, alt: '' },
+        ]}
       ></PairImages>
       <PairImages
         subtitle="Second Bedroom"
-        image1Src={SecondBedroom1}
-        image1Alt=""
-        image2Src={SecondBedroom2}
-        image2Alt=""
+        images={[
+          { src: SecondBedroom1, alt: '' },
+          { src: SecondBedroom2, alt: '' },
+        ]}
       ></PairImages>
       <PairImages
         subtitle="The Bathroom"
-        image1Src={Bathroom1}
-        image1Alt=""
-        image2Src={Bathroom2}
-        image2Alt=""
+        images={[
+          { src: Bathroom1, alt: '' },
+          { src: Bathroom2, alt: '' },
+        ]}
       ></PairImages>
     </section>
   );

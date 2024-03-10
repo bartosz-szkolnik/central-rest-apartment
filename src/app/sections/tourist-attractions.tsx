@@ -12,51 +12,52 @@ export function TouristAttractions() {
   return (
     <section className="relative mx-4 mt-2 pt-8 before:absolute before:left-1/2 before:h-[2px] before:w-20 before:-translate-x-1/2 before:bg-separator before:content-['']">
       <div className="mt-4  md:mb-28 md:mr-20">
-        <Title className="md:text-right" text="Tourist Attractions:"></Title>
+        <Title className="md:text-right">Tourist Attractions:</Title>
       </div>
       <div className="static right-0 top-0 mt-2 md:absolute md:right-10 md:top-20 md:w-[654px]">
-        <Paragraph
-          className="mt-2 text-center text-sm"
-          text="Additionaly there are many popular points of interest near the apartment which include:"
-        ></Paragraph>
+        <Paragraph className="mt-2 text-center text-sm">
+          Additionaly there are many popular points of interest near the apartment which include:
+        </Paragraph>
       </div>
       <ImageWithDescription
         subtitle="The Harbor"
         description="The Paphos Harbor which is filled with various restaurants and cafés"
-        imageAlt=""
+        alt=""
         textOrientation="right"
-        imageSrc={TheHarbor}
+        src={TheHarbor}
       ></ImageWithDescription>
       <ImageWithDescription
         subtitle="Saranda Kolones Castle"
         description="This ruined medieval fortress in the Paphos Archaeological Park"
-        imageAlt=""
+        alt=""
         textOrientation="left"
-        imageSrc={SarandaKolonesCastle}
+        src={SarandaKolonesCastle}
       ></ImageWithDescription>
       <ImageWithDescription
         subtitle="Mitropolis of Paphos"
         description="Ancient archeological findings which have stood for thousands of years"
-        imageAlt=""
+        alt=""
         textOrientation="right"
-        imageSrc={MitropolisOfPaphos}
+        src={MitropolisOfPaphos}
       ></ImageWithDescription>
       <ImageWithDescription
         subtitle="28 Octovriou Square"
         description="The Heart of the City and the location of City Centre"
-        imageAlt=""
+        alt=""
         textOrientation="left"
-        imageSrc={TwentyEightOctovrioSquare}
+        src={TwentyEightOctovrioSquare}
       ></ImageWithDescription>
       <ImageWithDescription
         subtitle="St. Paul’s Pillar"
         description="Ancient Religious monument"
-        imageAlt=""
+        alt=""
         textOrientation="right"
-        imageSrc={SaintPaulsPillar}
+        src={SaintPaulsPillar}
       ></ImageWithDescription>
 
-      <Subtitle underline={false} className="mb-8 mt-36" text="& many more!"></Subtitle>
+      <Subtitle underline={false} className="mb-8 mt-36">
+        & many more!
+      </Subtitle>
     </section>
   );
 }

@@ -1,10 +1,6 @@
 import clsx from 'clsx';
+import { ComponentProps } from 'react';
 
-export type TitleProps = {
-  text: string;
-  className?: string;
-};
-
-export function Title({ text, className }: TitleProps) {
-  return <h2 className={clsx('text-center text-xl font-bold text-title md:text-4xl', className)}>{text}</h2>;
+export function Title({ className, ...props }: ComponentProps<'h2'>) {
+  return <h2 className={clsx('text-center text-xl font-bold text-title md:text-4xl', className)} {...props}></h2>;
 }

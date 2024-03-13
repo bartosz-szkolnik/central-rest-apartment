@@ -3,18 +3,14 @@ import AboutTheApartmentDrone from '../img/about-the-apartment-1.jpg';
 import AboutTheApartmentCity from '../img/about-the-apartment-2.jpg';
 import { Title } from '@/app/components/title';
 import { Paragraph } from '@/app/components/paragraph';
+import { DictSection } from '../types';
 
-export function AboutTheApartment() {
+export function AboutTheApartment({ dict }: { dict: DictSection<'ABOUT_THE_APARTMENT'> }) {
   return (
     <section className="relative mx-4 mt-2 grid grid-cols-1 gap-y-3 pt-8 before:absolute before:left-1/2 before:h-[2px] before:w-20 before:-translate-x-1/2 before:bg-separator before:content-[''] md:grid-cols-5 md:gap-12">
       <div className="col-span-3 flex flex-col">
-        <Title>About the apartment: </Title>
-        <Paragraph className="text-justify text-sm">
-          This attractive apartment is situated in the Paphos City, close to the local attractions and interesting
-          dining options. Only 1.7 km from Kefalos Beach and 1.9 km from Lighthouse Beach, the Central Rest Apartment
-          offer an excellent base to explore and enjoy Paphos. The harbour and Kings shopping mall are both a pleasant
-          20-minute walk away.
-        </Paragraph>
+        <Title>{dict.TITLE}</Title>
+        <Paragraph className="text-justify text-sm">{dict.CONTENT}</Paragraph>
         <div className="flex flex-1 flex-col">
           <Image
             src={AboutTheApartmentDrone}

@@ -1,0 +1,56 @@
+{
+  "HERO": {
+    "TITLE": "Central Rest Apartment in Paphos"
+  },
+  "ABOUT_THE_APARTMENT": {
+    "TITLE": "About the apartment: ",
+    "CONTENT": "This attractive apartment is situated in the Paphos City, close to the local attractions and interesting dining options. Only 1.7 km from Kefalos Beach and 1.9 km from Lighthouse Beach, the Central Rest Apartment offer an excellent base to explore and enjoy Paphos. The harbour and Kings shopping mall are both a pleasant 20-minute walk away."
+  },
+  "INTERIOR": {
+    "TITLE": "Interior: ",
+    "CONTENT": "The apartment is equipped with 2 bedrooms, 1 living room, 1 bathroom, 1 kitchen. This property offers access to 2 balconies, the bigger balcony, is equipped with a table and four chairs and has partial sea views. Free private parking, air-conditioned with free Wi-Fi, furnished with 2 flat-screen TV. Facilities included: double fitted wardrobes, equipped kitchen with bar style-seated dining area. Bed linen, bath and hand towels are provided.",
+    "LIVING_ROOM": "The Living Room",
+    "KITCHEN": "The Kitchen",
+    "FIRST_BEDROOM": "First Bedroom",
+    "SECOND_BEDROOM": "Second Bedroom",
+    "BATHROOM": "The Bathroom"
+  },
+  "TOURIST_ATTRACTIONS": {
+    "TITLE": "Tourist Attractions:",
+    "INFO": "Additionaly there are many popular points of interest near the apartment which include:",
+    "THE_HARBOR": {
+      "TITLE": "The Harbor",
+      "CONTENT": "The Paphos Harbor which is filled with various restaurants and cafés"
+    },
+    "SARANDA_KOLONES_CASTLE": {
+      "TITLE": "Saranda Kolones Castle",
+      "CONTENT": "This ruined medieval fortress in the Paphos Archaeological Park"
+    },
+    "MITROPOLIS_OF_PATHOS": {
+      "TITLE": "Mitropolis of Paphos",
+      "CONTENT": "Ancient archeological findings which have stood for thousands of years"
+    },
+    "28_OCTOVRIOU_SQUARE": {
+      "TITLE": "28 Octovriou Square",
+      "CONTENT": "The Heart of the City and the location of City Centre"
+    },
+    "ST_PAULS_PILLAR": {
+      "TITLE": "St. Paul’s Pillar",
+      "CONTENT": "Ancient Religious monument"
+    },
+    "MANY_MORE": "& many more!"
+  },
+  "CONTACT_INFO": {
+    "INTERESTED": "Interested?",
+    "GOT_MORE_QUESTIONS": "Got more questions?",
+    "CONTACT_US": "Contact Us!",
+    "CONTACT_INFO": "Contact Info:",
+    "WHATS_APP_NUMBER": "WhatsApp Number: ",
+    "LOCAL_NUMBER_IN_PAPHOS": "Local Number in Paphos: ",
+    "EMAIL_ADDRESS": "E-mail Address: ",
+    "ADDRESS": "Address:",
+    "CYPRUS": "Cyprus",
+    "OR_LOOK_AT_GOOGLE_MAPS": "Or look at Google Maps",
+    "WHERE_APARTMENT_IS_LOCATED": "Where apartment is located:"
+  }
+}

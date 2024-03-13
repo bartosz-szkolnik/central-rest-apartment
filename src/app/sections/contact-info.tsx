@@ -54,7 +54,7 @@ export function ContactInfo({ dict }: { dict: DictSection<'CONTACT_INFO'> }) {
       <div className="col-span-1 mt-8">
         <Subtitle underline={false}>{dict.WHERE_APARTMENT_IS_LOCATED}</Subtitle>
         <div className="mt-4 flex justify-center">
-          <Map></Map>
+          <Map />
         </div>
       </div>
     </section>

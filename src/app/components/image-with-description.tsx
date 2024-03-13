@@ -24,7 +24,7 @@ export function ImageWithDescription({ alt, src, subtitle, description, textOrie
               src={src}
               alt={alt}
               className="aspect-square h-full w-full rounded-2xl object-cover md:mt-0 md:aspect-auto md:h-[622px]"
-            ></Image>
+            />
           </div>
         </div>
       </div>
@@ -42,7 +42,7 @@ export function ImageWithDescription({ alt, src, subtitle, description, textOrie
               src={src}
               alt={alt}
               className="aspect-square h-full w-full rounded-2xl object-cover md:mt-0 md:aspect-auto md:h-[622px]"
-            ></Image>
+            />
           </div>
           {textOrientation === 'right' && (
             <div className="col-span-1 flex flex-col items-center justify-center">

@@ -29,35 +29,35 @@ export function Interior({ dict }: { dict: DictSection<'INTERIOR'> }) {
           { src: LivingRoom1, alt: '' },
           { src: LivingRoom2, alt: '' },
         ]}
-      ></PairImages>
+      />
       <PairImages
         subtitle={dict.KITCHEN}
         images={[
           { src: Kitchen1, alt: '' },
           { src: Kitchen2, alt: '' },
         ]}
-      ></PairImages>
+      />
       <PairImages
         subtitle={dict.FIRST_BEDROOM}
         images={[
           { src: FirstBedroom1, alt: '' },
           { src: FirstBedroom2, alt: '' },
         ]}
-      ></PairImages>
+      />
       <PairImages
         subtitle={dict.SECOND_BEDROOM}
         images={[
           { src: SecondBedroom1, alt: '' },
           { src: SecondBedroom2, alt: '' },
         ]}
-      ></PairImages>
+      />
       <PairImages
         subtitle={dict.BATHROOM}
         images={[
           { src: Bathroom1, alt: '' },
           { src: Bathroom2, alt: '' },
         ]}
-      ></PairImages>
+      />
     </section>
   );
 }

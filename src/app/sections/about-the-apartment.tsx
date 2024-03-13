@@ -17,7 +17,7 @@ export function AboutTheApartment({ dict }: { dict: DictSection<'ABOUT_THE_APART
             sizes="(max-width: 768px) 100vw, (max-width: 1600px) 50vw, 33vw"
             alt=""
             className="mt-6 aspect-video h-full rounded-2xl"
-          ></Image>
+          />
         </div>
       </div>
 
@@ -27,7 +27,7 @@ export function AboutTheApartment({ dict }: { dict: DictSection<'ABOUT_THE_APART
           alt=""
           className="aspect-square h-full rounded-2xl object-cover md:mt-0 md:aspect-auto"
           priority
-        ></Image>
+        />
       </div>
     </section>
   );

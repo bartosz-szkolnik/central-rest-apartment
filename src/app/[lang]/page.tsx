@@ -10,12 +10,12 @@ export default async function Home({ params: { lang } }: { params: { lang: Local
 
   return (
     <main>
-      <Hero dict={dict.HERO}></Hero>
+      <Hero dict={dict.HERO} />
       <div className="mx-auto flex max-w-[1600px] flex-col gap-y-12">
-        <AboutTheApartment dict={dict.ABOUT_THE_APARTMENT}></AboutTheApartment>
-        <Interior dict={dict.INTERIOR}></Interior>
-        <TouristAttractions dict={dict.TOURIST_ATTRACTIONS}></TouristAttractions>
-        <ContactInfo dict={dict.CONTACT_INFO}></ContactInfo>
+        <AboutTheApartment dict={dict.ABOUT_THE_APARTMENT} />
+        <Interior dict={dict.INTERIOR} />
+        <TouristAttractions dict={dict.TOURIST_ATTRACTIONS} />
+        <ContactInfo dict={dict.CONTACT_INFO} />
       </div>
     </main>
   );

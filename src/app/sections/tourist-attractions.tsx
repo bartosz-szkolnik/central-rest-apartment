@@ -24,35 +24,35 @@ export function TouristAttractions({ dict }: { dict: DictSection<'TOURIST_ATTRAC
         alt=""
         textOrientation="right"
         src={TheHarbor}
-      ></ImageWithDescription>
+      />
       <ImageWithDescription
         subtitle={dict.SARANDA_KOLONES_CASTLE.TITLE}
         description={dict.SARANDA_KOLONES_CASTLE.CONTENT}
         alt=""
         textOrientation="left"
         src={SarandaKolonesCastle}
-      ></ImageWithDescription>
+      />
       <ImageWithDescription
         subtitle={dict.MITROPOLIS_OF_PATHOS.TITLE}
         description={dict.MITROPOLIS_OF_PATHOS.CONTENT}
         alt=""
         textOrientation="right"
         src={MitropolisOfPaphos}
-      ></ImageWithDescription>
+      />
       <ImageWithDescription
         subtitle={dict['28_OCTOVRIOU_SQUARE'].TITLE}
         description={dict['28_OCTOVRIOU_SQUARE'].CONTENT}
         alt=""
         textOrientation="left"
         src={TwentyEightOctovrioSquare}
-      ></ImageWithDescription>
+      />
       <ImageWithDescription
         subtitle={dict.ST_PAULS_PILLAR.TITLE}
         description={dict.ST_PAULS_PILLAR.CONTENT}
         alt=""
         textOrientation="right"
         src={SaintPaulsPillar}
-      ></ImageWithDescription>
+      />
 
       <Subtitle underline={false} className="mb-8 mt-36">
         {dict.MANY_MORE}

@@ -3,6 +3,9 @@ import { Paragraph } from '../components/paragraph';
 import { Map } from '../components/map';
 import { ExternalLink } from '../components/external-link';
 
+const GOOGLE_MAPS_LINK =
+  'https://www.google.com/maps/place/Andrea+Georgiou+10-2016,+Paphos+8046,+Cyprus/@34.7735554,32.4154569,17z/data=!3m1!4b1!4m5!3m4!1s0x14e706f17b5d94d9:0xa55c1a4cc6167b86!8m2!3d34.7735554!4d32.4180318?entry=ttu';
+
 export function ContactInfo() {
   return (
     <section className="relative mx-4 mb-20 mt-2 grid grid-cols-1 gap-y-3 pt-8 before:absolute before:left-1/2 before:h-[2px] before:w-20 before:-translate-x-1/2 before:bg-separator before:content-[''] md:grid-cols-2">
@@ -30,14 +33,7 @@ export function ContactInfo() {
           <span className="font-bold">E-mail Address: </span>
           <ExternalLink href="mailto:mroz1812@gmail.com">mroz1812@gmail.com</ExternalLink>
         </Paragraph>
-      </div>
-
-      <div className="col-span-1 mt-8">
-        <Subtitle underline={false}>Where apartment is located:</Subtitle>
-        <div className="mt-4 flex justify-center">
-          <Map></Map>
-        </div>
-        <div className="mx-12 mt-4 md:flex md:flex-col md:justify-center md:px-8">
+        <div className="mx-12 mt-8 md:flex md:flex-col md:justify-center md:px-8">
           <Paragraph className="mt-2 text-[18px]">Address:</Paragraph>
           <Paragraph className="mt-2 text-[18px] font-bold">
             <span>
@@ -46,6 +42,18 @@ export function ContactInfo() {
               Cyprus
             </span>
           </Paragraph>
+          <Paragraph className="mt-4">
+            <ExternalLink target="_blank" href={GOOGLE_MAPS_LINK}>
+              Or look at Google Maps
+            </ExternalLink>
+          </Paragraph>
+        </div>
+      </div>
+
+      <div className="col-span-1 mt-8">
+        <Subtitle underline={false}>Where apartment is located:</Subtitle>
+        <div className="mt-4 flex justify-center">
+          <Map></Map>
         </div>
       </div>
     </section>

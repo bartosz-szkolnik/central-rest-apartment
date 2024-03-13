@@ -1,7 +1,7 @@
 import { ImageWithDescription } from '@/app/components/image-with-description';
 import { Paragraph } from '@/app/components/paragraph';
 import { Title } from '@/app/components/title';
-import TheHarbor from '../img/the-harbor.webp';
+import TheHarbor from '../img/the-harbor.jpeg';
 import SarandaKolonesCastle from '../img/saranda-kolones-castle.jpg';
 import MitropolisOfPaphos from '../img/mitropolis-of-pathos.jpg';
 import TwentyEightOctovrioSquare from '../img/twenty-eight-octovriou-square.jpg';

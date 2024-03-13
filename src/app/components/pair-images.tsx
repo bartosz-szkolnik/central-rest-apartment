@@ -23,7 +23,7 @@ export function PairImages({ subtitle, images }: PairImagesProps) {
             src={image.src}
             alt={image.alt}
             className="aspect-square h-full rounded-2xl object-cover md:mt-0 md:aspect-auto"
-          ></Image>
+          />
         </div>
       ))}
     </div>

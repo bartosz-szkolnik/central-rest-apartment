@@ -1,0 +1,56 @@
+{
+  "HERO": {
+    "TITLE": "Apartament Central Rest w Pafos"
+  },
+  "ABOUT_THE_APARTMENT": {
+    "TITLE": "O mieszkaniu: ",
+    "CONTENT": "Ten atrakcyjny apartament położony jest w mieście Pafos, blisko lokalnych atrakcji i ciekawych lokali gastronomicznych. Położony zaledwie 1,7 km od plaży Kefalos i 1,9 km od plaży Lighthouse, apartament Central Rest stanowi doskonałą bazę wypadową do zwiedzania Pafos.  Port i centrum handlowe Kings oddalone są od obiektu o 20 minut spacerem."
+  },
+  "INTERIOR": {
+    "TITLE": "Wnętrze",
+    "CONTENT": "Mieszkanie jest wyposażone w dwie sypialnie, pokój dzienny, łazienkę, kuchnię i dwa balkony. Większy balkon jest wyposażony w stół i cztery krzesła i ma częściowy widok na morze.  Bezpłatny prywatny parking. Mieszkanie jest klimatyzowane, z bezpłatnym bezprzewodowym dostępem do Internetu, wyposażone w dwa telewizory z płaskim ekranem. Wyposażenie obejmuje: podwójne szafy wnękowe, wyposażoną kuchnię z jadalnią w stylu barowym. Obiekt wyposażony jest w pościel, ręczniki kąpielowe oraz ręczniki do rąk.",
+    "LIVING_ROOM": "Pokój dzienny",
+    "KITCHEN": "Kuchnia",
+    "FIRST_BEDROOM": "Pierwsza sypialna",
+    "SECOND_BEDROOM": "Druga sypialnia",
+    "BATHROOM": "Łazienka"
+  },
+  "TOURIST_ATTRACTIONS": {
+    "TITLE": "Atrakcje Turystyczne:",
+    "INFO": "Additionaly there are many popular points of interest near the apartment which include:",
+    "THE_HARBOR": {
+      "TITLE": "The Harbor",
+      "CONTENT": "The Paphos Harbor which is filled with various restaurants and cafés"
+    },
+    "SARANDA_KOLONES_CASTLE": {
+      "TITLE": "Saranda Kolones Castle",
+      "CONTENT": "This ruined medieval fortress in the Paphos Archaeological Park"
+    },
+    "MITROPOLIS_OF_PATHOS": {
+      "TITLE": "Mitropolis of Paphos",
+      "CONTENT": "Ancient archeological findings which have stood for thousands of years"
+    },
+    "28_OCTOVRIOU_SQUARE": {
+      "TITLE": "28 Octovriou Square",
+      "CONTENT": "The Heart of the City and the location of City Centre"
+    },
+    "ST_PAULS_PILLAR": {
+      "TITLE": "St. Paul’s Pillar",
+      "CONTENT": "Ancient Religious monument"
+    },
+    "MANY_MORE": "i wiele więcej!"
+  },
+  "CONTACT_INFO": {
+    "INTERESTED": "Zainteresowany?",
+    "GOT_MORE_QUESTIONS": "Masz więcej pytań?",
+    "CONTACT_US": "Zadzwoń lub napisz do nas!",
+    "CONTACT_INFO": "Informacje kontaktowe:",
+    "WHATS_APP_NUMBER": "Numer WhatsApp: ",
+    "LOCAL_NUMBER_IN_PAPHOS": "Lokalny numer w Pafos: ",
+    "EMAIL_ADDRESS": "Adres E-mail : ",
+    "ADDRESS": "Adres apartamentu:",
+    "CYPRUS": "Cypr",
+    "OR_LOOK_AT_GOOGLE_MAPS": "Albo spójrz na mapach Google",
+    "WHERE_APARTMENT_IS_LOCATED": "Gdzie apartament się znajduje: "
+  }
+}

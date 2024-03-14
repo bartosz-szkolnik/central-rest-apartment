@@ -1,13 +1,13 @@
 import Image from 'next/image';
-import AboutTheApartmentDrone from '../img/about-the-apartment-1.jpg';
-import AboutTheApartmentCity from '../img/about-the-apartment-2.jpg';
-import { Title } from '@/app/components/title';
-import { Paragraph } from '@/app/components/paragraph';
+import AboutTheApartmentDrone from '../../img/about-the-apartment-1.jpg';
+import AboutTheApartmentCity from '../../img/about-the-apartment-2.jpg';
+import { Title } from '@/components/title';
+import { Paragraph } from '@/components/paragraph';
 import { DictSection } from '../types';
 
 export function AboutTheApartment({ dict }: { dict: DictSection<'ABOUT_THE_APARTMENT'> }) {
   return (
-    <section className="relative mx-4 mt-2 grid grid-cols-1 gap-y-3 pt-8 before:absolute before:left-1/2 before:h-[2px] before:w-20 before:-translate-x-1/2 before:bg-separator before:content-[''] md:grid-cols-5 md:gap-12">
+    <section className="before:bg-separator relative mx-4 mt-2 grid grid-cols-1 gap-y-3 pt-8 before:absolute before:left-1/2 before:h-[2px] before:w-20 before:-translate-x-1/2 before:content-[''] md:grid-cols-5 md:gap-12">
       <div className="col-span-3 flex flex-col">
         <Title>{dict.TITLE}</Title>
         <Paragraph className="text-justify text-sm">{dict.CONTENT}</Paragraph>

@@ -1,17 +1,17 @@
-import { ImageWithDescription } from '@/app/components/image-with-description';
-import { Paragraph } from '@/app/components/paragraph';
-import { Title } from '@/app/components/title';
-import TheHarbor from '../img/the-harbor.jpeg';
-import SarandaKolonesCastle from '../img/saranda-kolones-castle.jpg';
-import MitropolisOfPaphos from '../img/mitropolis-of-pathos.jpg';
-import TwentyEightOctovrioSquare from '../img/twenty-eight-octovriou-square.jpg';
-import SaintPaulsPillar from '../img/saint-pauls-pillar.jpg';
-import { Subtitle } from '@/app/components/subtitle';
+import { ImageWithDescription } from '@/components/image-with-description';
+import { Paragraph } from '@/components/paragraph';
+import { Title } from '@/components/title';
+import TheHarbor from '../../img/the-harbor.jpeg';
+import SarandaKolonesCastle from '../../img/saranda-kolones-castle.jpg';
+import MitropolisOfPaphos from '../../img/mitropolis-of-pathos.jpg';
+import TwentyEightOctovrioSquare from '../../img/twenty-eight-octovriou-square.jpg';
+import SaintPaulsPillar from '../../img/saint-pauls-pillar.jpg';
+import { Subtitle } from '@/components/subtitle';
 import { DictSection } from '../types';
 
 export function TouristAttractions({ dict }: { dict: DictSection<'TOURIST_ATTRACTIONS'> }) {
   return (
-    <section className="relative mx-4 mt-2 pt-8 before:absolute before:left-1/2 before:h-[2px] before:w-20 before:-translate-x-1/2 before:bg-separator before:content-['']">
+    <section className="before:bg-separator relative mx-4 mt-2 pt-8 before:absolute before:left-1/2 before:h-[2px] before:w-20 before:-translate-x-1/2 before:content-['']">
       <div className="mt-4  md:mb-28 md:mr-20">
         <Title className="md:text-right">{dict.TITLE}</Title>
       </div>

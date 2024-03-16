@@ -1,4 +1,4 @@
-import { Subtitle } from '@/components/subtitle';
+import { Subtitle } from '@components/subtitle';
 import { Paragraph } from '../../components/paragraph';
 import { Map } from '../../components/map';
 import { ExternalLink } from '../../components/external-link';
@@ -9,14 +9,14 @@ const GOOGLE_MAPS_LINK =
 
 export function ContactInfo({ dict }: { dict: DictSection<'CONTACT_INFO'> }) {
   return (
-    <section className="before:bg-separator relative mx-4 mb-20 mt-2 grid grid-cols-1 gap-y-3 pt-8 before:absolute before:left-1/2 before:h-[2px] before:w-20 before:-translate-x-1/2 before:content-[''] md:grid-cols-2">
+    <section className="relative mx-4 mb-20 mt-2 grid grid-cols-1 gap-y-3 pt-8 before:absolute before:left-1/2 before:h-[2px] before:w-20 before:-translate-x-1/2 before:bg-separator before:content-[''] md:grid-cols-2">
       <div className="flex flex-col gap-4 md:col-span-2">
         <Subtitle underline={false}>{dict.INTERESTED}</Subtitle>
         <Subtitle underline={false}>{dict.GOT_MORE_QUESTIONS}</Subtitle>
         <Subtitle underline={false}>{dict.CONTACT_US}</Subtitle>
       </div>
 
-      <div className="md:border-separator col-span-1 mt-8 md:border-r-2">
+      <div className="col-span-1 mt-8 md:border-r-2 md:border-separator">
         <Subtitle underline={false}>{dict.CONTACT_INFO}</Subtitle>
         <Paragraph className="mt-4 text-center text-[18px]">
           <span className="font-bold">{dict.WHATS_APP_NUMBER}</span>

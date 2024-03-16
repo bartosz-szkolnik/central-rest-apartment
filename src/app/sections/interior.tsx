@@ -1,6 +1,6 @@
-import { PairImages } from '@/components/pair-images';
-import { Paragraph } from '@/components/paragraph';
-import { Title } from '@/components/title';
+import { PairImages } from '@components/pair-images';
+import { Paragraph } from '@components/paragraph';
+import { Title } from '@components/title';
 import Kitchen1 from '../../img/the-kitchen-1.jpg';
 import Kitchen2 from '../../img/the-kitchen-2.jpg';
 import LivingRoom1 from '../../img/living-room-1.jpg';
@@ -15,7 +15,7 @@ import { DictSection } from '../types';
 
 export function Interior({ dict }: { dict: DictSection<'INTERIOR'> }) {
   return (
-    <section className="before:bg-separator relative mx-4 mt-2 pt-8 before:absolute before:left-1/2 before:h-[2px] before:w-20 before:-translate-x-1/2 before:content-['']">
+    <section className="relative mx-4 mt-2 pt-8 before:absolute before:left-1/2 before:h-[2px] before:w-20 before:-translate-x-1/2 before:bg-separator before:content-['']">
       <div className="mt-4">
         <Title>{dict.TITLE}</Title>
         <div className="flex justify-center">

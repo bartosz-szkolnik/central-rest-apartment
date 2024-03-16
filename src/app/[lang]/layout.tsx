@@ -1,22 +1,21 @@
 import type { Metadata } from 'next';
 import { Inria_Sans } from 'next/font/google';
-import './globals.css';
+import '../../styles/globals.css';
+import { cn } from '@lib/utils';
 
-const inriaSans = Inria_Sans({ subsets: ['latin-ext'], weight: ['400', '700'] });
+const inriaSans = Inria_Sans({ subsets: ['latin-ext'], weight: ['400', '700'], variable: '--font-sans' });
 
 export const metadata: Metadata = {
   title: 'Central Rest Apartment in Paphos for rent',
   description: '',
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body className={`${inriaSans.className} bg-gradient-to-r from-gradient-1 via-gradient-2 to-gradient-3`}>
+      <body
+        className={cn('bg-gradient-to-r from-gradient-begin via-gradient-middle to-gradient-end', inriaSans.className)}
+      >
         {children}
       </body>
     </html>

@@ -1,8 +1,8 @@
-import { AboutTheApartment } from '@/app/sections/about-the-apartment';
-import { Interior } from '@/app/sections/interior';
-import { TouristAttractions } from '../sections/tourist-attractions';
-import { ContactInfo } from '../sections/contact-info';
-import { Hero } from '../sections/hero';
+import { AboutTheApartment } from '@sections/about-the-apartment';
+import { Interior } from '@sections/interior';
+import { TouristAttractions } from '@sections/tourist-attractions';
+import { ContactInfo } from '@sections/contact-info';
+import { Hero } from '@sections/hero';
 import { Locale, getDictionary } from './dictionaries';
 
 export default async function Home({ params: { lang } }: { params: { lang: Locale } }) {

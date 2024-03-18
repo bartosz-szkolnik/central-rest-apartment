@@ -1,10 +1,10 @@
 import Image from 'next/image';
 import HeroImage from '../../img/hero.jpg';
-import { Be_Vietnam_Pro } from 'next/font/google';
+import { Cairo } from 'next/font/google';
 import { DictSection } from '../types';
 import { cn } from '@lib/utils';
 
-const heroFont = Be_Vietnam_Pro({ subsets: ['latin-ext'], weight: ['500', '600', '700', '800'] });
+const heroFont = Cairo({ subsets: ['latin-ext'], weight: ['500', '600', '700', '800'] });
 
 export function Hero({ dict }: { dict: DictSection<'HERO'> }) {
   return (
@@ -28,7 +28,7 @@ export function Hero({ dict }: { dict: DictSection<'HERO'> }) {
           <h1
             style={{ wordSpacing: '0.6rem', letterSpacing: '-0.05rem' }}
             className={cn(
-              'text-darker-vanilla border-0 border-b-4 border-b-chocolate text-center text-[6rem] font-extrabold [-webkit-text-stroke:#363636_4px]',
+              'text-darker-vanilla border-0 border-b-4 border-b-chocolate text-center text-[6rem] font-extrabold [-webkit-text-stroke:#363636_4.5px]',
               heroFont.className,
             )}
           >

@@ -4,6 +4,7 @@ import { TouristAttractions } from '@sections/tourist-attractions';
 import { ContactInfo } from '@sections/contact-info';
 import { Hero } from '@sections/hero';
 import { Locale, getDictionary } from './dictionaries';
+import { Settings } from './settings';
 import { Separator } from '@components/separator';
 
 export default async function Home({ params: { lang } }: { params: { lang: Locale } }) {
@@ -23,6 +24,9 @@ export default async function Home({ params: { lang } }: { params: { lang: Local
           <Separator />
           <ContactInfo dict={dict.CONTACT_INFO} />
         </div>
+        <aside className="fixed bottom-6 right-6 md:left-6 md:top-6">
+          <Settings locale={lang} dict={dict.SETTINGS} />
+        </aside>
       </main>
     </>
   );

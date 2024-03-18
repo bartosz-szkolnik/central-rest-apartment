@@ -52,5 +52,15 @@
     "CYPRUS": "Cyprus",
     "OR_LOOK_AT_GOOGLE_MAPS": "Or look at Google Maps",
     "WHERE_APARTMENT_IS_LOCATED": "Where apartment is located:"
+  },
+  "SETTINGS": {
+    "TITLE": "Here you can change your settings",
+    "CHOOSE_LANGUAGE": "Choose language",
+    "ENGLISH": "English",
+    "POLISH": "Polish",
+    "TOGGLE_THEME": "Toggle theme",
+    "LIGHT_THEME": "Light theme",
+    "DARK_THEME": "Dark theme",
+    "SYSTEM_THEME": "Use device settings"
   }
 }

@@ -24,7 +24,7 @@
     },
     "SARANDA_KOLONES_CASTLE": {
       "TITLE": "Zamek w Sarandzie Kolones",
-      "CONTENT": "To zrujnowana średniowieczna forteca w Parku Archeologicznym w Pafos"
+      "CONTENT": "To nadgryziona zębem czasu średniowieczna forteca w Parku Archeologicznym w Pafos"
     },
     "MITROPOLIS_OF_PATHOS": {
       "TITLE": "Metropolia Pafos",
@@ -52,5 +52,15 @@
     "CYPRUS": "Cypr",
     "OR_LOOK_AT_GOOGLE_MAPS": "Albo spójrz na mapach Google",
     "WHERE_APARTMENT_IS_LOCATED": "Gdzie apartament się znajduje: "
+  },
+  "SETTINGS": {
+    "TITLE": "Tutaj możesz zmienić swoje ustawienia",
+    "CHOOSE_LANGUAGE": "Wybierz język",
+    "ENGLISH": "Angielski",
+    "POLISH": "Polski",
+    "TOGGLE_THEME": "Wybiezrz motyw",
+    "LIGHT_THEME": "Jasny motyw",
+    "DARK_THEME": "Ciemny motyw",
+    "SYSTEM_THEME": "Użyj motywu urządzenia"
   }
 }

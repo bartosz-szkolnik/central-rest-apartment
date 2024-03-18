@@ -46,6 +46,8 @@
     --content: #484848;
     --link: #4285f4;
     --separator: #d2c3c1;
+    --dark-vanilla: #c2b3b1;
+    --darker-vanilla: #928381;
     --gradient-begin: #e3ddd4;
     --gradient-middle: #ede6e0;
     --gradient-end: #e0d7cc;
@@ -80,7 +82,16 @@
     --input: 12 6.5% 15.1%;
     --ring: 24 5.7% 82.9%;
 
-    /* Add dark mode colors */
+    --vanilla: #d7cbc5;
+    --chocolate: #363636;
+    --header: #c0b2ab;
+    --content: #bdafa9;
+    --link: #4285f4;
+    --separator: #d2c3c1;
+    --dark-vanilla: #c2b3b1;
+    --darker-vanilla: #928381;
+    --gradient-begin: #363636;
+    --gradient-end: #373737;
   }
 }
 

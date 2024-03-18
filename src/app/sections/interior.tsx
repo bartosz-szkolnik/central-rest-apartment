@@ -15,12 +15,10 @@ import { DictSection } from '../types';
 
 export function Interior({ dict }: { dict: DictSection<'INTERIOR'> }) {
   return (
-    <section className="relative mx-4 mt-2 pt-8 before:absolute before:left-1/2 before:h-[2px] before:w-20 before:-translate-x-1/2 before:bg-separator before:content-['']">
-      <div className="mt-4">
-        <Title>{dict.TITLE}</Title>
-        <div className="flex justify-center">
-          <Paragraph className="mt-2 text-center text-sm md:w-3/4">{dict.CONTENT}</Paragraph>
-        </div>
+    <section className="relative mx-4">
+      <Title className="mb-4">{dict.TITLE}</Title>
+      <div className="flex justify-center">
+        <Paragraph className="text-center text-sm md:w-3/4">{dict.CONTENT}</Paragraph>
       </div>
 
       <PairImages

@@ -11,13 +11,10 @@ import { DictSection } from '../types';
 
 export function TouristAttractions({ dict }: { dict: DictSection<'TOURIST_ATTRACTIONS'> }) {
   return (
-    <section className="relative mx-4 mt-2 pt-8 before:absolute before:left-1/2 before:h-[2px] before:w-20 before:-translate-x-1/2 before:bg-separator before:content-['']">
-      <div className="mt-4  md:mb-28 md:mr-20">
-        <Title className="md:text-right">{dict.TITLE}</Title>
-      </div>
-      <div className="static right-0 top-0 mt-2 md:absolute md:right-10 md:top-20 md:w-[654px]">
-        <Paragraph className="mt-2 text-center text-sm">{dict.INFO}</Paragraph>
-      </div>
+    <section className="relative mx-4">
+      <Title className="mb-4">{dict.TITLE}</Title>
+
+      <Paragraph className="mt-2 text-center text-sm">{dict.INFO}</Paragraph>
       <ImageWithDescription
         subtitle={dict.THE_HARBOR.TITLE}
         description={dict.THE_HARBOR.CONTENT}
@@ -54,7 +51,7 @@ export function TouristAttractions({ dict }: { dict: DictSection<'TOURIST_ATTRAC
         src={SaintPaulsPillar}
       />
 
-      <Subtitle underline={false} className="mb-8 mt-36">
+      <Subtitle underline={false} className="mt-20 md:mt-28">
         {dict.MANY_MORE}
       </Subtitle>
     </section>

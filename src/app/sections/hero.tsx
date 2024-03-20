@@ -4,7 +4,7 @@ import { Cairo } from 'next/font/google';
 import { DictSection } from '../types';
 import { cn } from '@lib/utils';
 
-const heroFont = Cairo({ subsets: ['latin-ext'], weight: ['500', '600', '700', '800'] });
+const heroFont = Cairo({ subsets: ['latin-ext'], weight: ['600', '800'] });
 
 export function Hero({ dict }: { dict: DictSection<'HERO'> }) {
   return (
@@ -28,7 +28,7 @@ export function Hero({ dict }: { dict: DictSection<'HERO'> }) {
           <h1
             style={{ wordSpacing: '0.6rem', letterSpacing: '-0.05rem' }}
             className={cn(
-              'text-darker-vanilla border-0 border-b-4 border-b-chocolate text-center text-[6rem] font-extrabold [-webkit-text-stroke:#363636_4.5px]',
+              'border-0 border-b-4 border-b-chocolate text-center text-[6rem] font-extrabold text-darker-vanilla [-webkit-text-stroke:#363636_4.5px]',
               heroFont.className,
             )}
           >

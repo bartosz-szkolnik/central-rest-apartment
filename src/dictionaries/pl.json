@@ -1,6 +1,6 @@
 {
   "HERO": {
-    "TITLE": "Apartament Central Rest w Pafos"
+    "TITLE": "Apartament Central Rest w Pafos"
   },
   "ABOUT_THE_APARTMENT": {
     "TITLE": "O mieszkaniu: ",
@@ -44,7 +44,6 @@
     "INTERESTED": "Zainteresowany?",
     "GOT_MORE_QUESTIONS": "Masz więcej pytań?",
     "CONTACT_US": "Zadzwoń lub napisz do nas!",
-    "CONTACT_INFO": "Informacje kontaktowe:",
     "WHATS_APP_NUMBER": "Numer WhatsApp: ",
     "LOCAL_NUMBER_IN_PAPHOS": "Lokalny numer w Pafos: ",
     "EMAIL_ADDRESS": "Adres E-mail : ",

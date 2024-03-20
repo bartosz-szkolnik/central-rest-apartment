@@ -24,7 +24,10 @@ export default async function Home({ params: { lang } }: { params: { lang: Local
           <Separator />
           <ContactInfo dict={dict.CONTACT_INFO} />
         </div>
-        <aside className="fixed bottom-6 right-6 md:left-6 md:top-6">
+        <aside className="fixed bottom-6 right-6 block md:hidden">
+          <Settings locale={lang} dict={dict.SETTINGS} />
+        </aside>
+        <aside className="fixed left-6 top-6 hidden md:block">
           <Settings locale={lang} dict={dict.SETTINGS} />
         </aside>
       </main>

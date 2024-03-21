@@ -12,7 +12,7 @@ import { useEffect, useState } from 'react';
 export function LanguageToggle({ locale, dict }: { locale: Locale; dict: DictSection<'SETTINGS'> }) {
   const router = useRouter();
   const urlSegments = useSelectedLayoutSegments();
-  const [supportsEmoji, setSupportsEmoji] = useState(false);
+  const [supportsEmoji, setSupportsEmoji] = useState(true);
 
   useEffect(() => {
     setSupportsEmoji(supportsEmojiIcons());
@@ -27,42 +27,45 @@ export function LanguageToggle({ locale, dict }: { locale: Locale; dict: DictSec
       <DropdownMenuTrigger asChild>
         <Button variant="outline" size="icon">
           <Icon variant="custom">
-            {supportsEmoji ? (
-              <>
-                {(locale === 'en' || locale === 'en-US' || locale === 'en-GB') && <span className="text-2xl">🇬🇧</span>}
-                {(locale === 'pl' || locale === 'pl-PL') && <span className="text-2xl">🇵🇱</span>}
-              </>
-            ) : locale === 'pl' || locale === 'pl-PL' ? (
-              <Icon variant="polish-flag" className="h-[1.2rem] w-[1.2rem]" />
-            ) : (
-              <Icon variant="great-britain-flag" className="h-[1.2rem] w-[1.2rem]" />
-            )}
-            <span className="sr-only">{dict.CHOOSE_LANGUAGE}</span>
+            <Flag locale={locale} supportsEmoji={supportsEmoji} />
           </Icon>
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
         <DropdownMenuItem onClick={() => handleLocaleChange('en-GB')}>
           <span className="flex items-center gap-2">
-            {supportsEmoji ? (
-              <span className="text-2xl">🇬🇧</span>
-            ) : (
-              <Icon variant="great-britain-flag" className="h-[1.2rem] w-[1.2rem]" />
-            )}
+            <Flag locale={'en-GB'} supportsEmoji={supportsEmoji} />
             {dict.ENGLISH}
           </span>
         </DropdownMenuItem>
         <DropdownMenuItem onClick={() => handleLocaleChange('pl-PL')}>
           <span className="flex items-center gap-2">
-            {supportsEmoji ? (
-              <span className="text-2xl">🇵🇱</span>
-            ) : (
-              <Icon variant="polish-flag" className="h-[1.2rem] w-[1.2rem]" />
-            )}
+            <Flag locale={'pl-PL'} supportsEmoji={supportsEmoji} />
             {dict.POLISH}
           </span>
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
   );
+}
+
+function Flag({ supportsEmoji, locale }: { supportsEmoji: boolean; locale: Locale }) {
+  switch (locale) {
+    case 'en':
+    case 'en-US':
+    case 'en-GB':
+      if (!supportsEmoji) {
+        return <Icon variant="great-britain-flag" className="h-[1.2rem] w-[1.2rem]" />;
+      }
+
+      return <span className="text-2xl">🇬🇧</span>;
+
+    case 'pl':
+    case 'pl-PL':
+      if (!supportsEmoji) {
+        return <Icon variant="polish-flag" className="h-[1.2rem] w-[1.2rem]" />;
+      }
+
+      return <span className="text-2xl">🇵🇱</span>;
+  }
 }

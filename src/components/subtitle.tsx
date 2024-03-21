@@ -1,4 +1,4 @@
-import clsx from 'clsx';
+import { cn } from '@lib/utils';
 import { ComponentProps } from 'react';
 
 export type SubtitleProps = ComponentProps<'h3'> & {
@@ -8,7 +8,7 @@ export type SubtitleProps = ComponentProps<'h3'> & {
 export function Subtitle({ className, underline = true, ...props }: SubtitleProps) {
   return (
     <h3
-      className={clsx('text-center text-xl font-bold text-title md:text-3xl', underline && 'underline', className)}
+      className={cn('text-center text-xl font-bold text-header md:text-3xl', underline && 'underline', className)}
       {...props}
     />
   );

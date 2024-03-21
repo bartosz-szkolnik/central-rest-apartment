@@ -1,8 +1,10 @@
-import type { Metadata } from 'next';
+import { type Metadata } from 'next';
 import { Inria_Sans } from 'next/font/google';
-import './globals.css';
+import { cn } from '@lib/utils';
+import { ThemeProvider } from '../../providers/theme-provider';
+import '../../styles/globals.css';
 
-const inriaSans = Inria_Sans({ subsets: ['latin-ext'], weight: ['400', '700'] });
+const inriaSans = Inria_Sans({ subsets: ['latin-ext'], weight: ['400', '700'], variable: '--font-sans' });
 
 export const metadata: Metadata = {
   title: 'Central Rest Apartment in Paphos for rent',
@@ -11,14 +13,37 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+  params: { lang },
+}: Readonly<{ children: React.ReactNode; params: { lang: string } }>) {
+  // const lang = headers().get('x-lang');
+  const properLang = getProperLang(lang);
+
   return (
-    <html lang="en">
-      <body className={`${inriaSans.className} bg-gradient-to-r from-gradient-1 via-gradient-2 to-gradient-3`}>
-        {children}
+    <html lang={properLang} suppressHydrationWarning>
+      <body
+        className={cn(
+          'bg-gradient-to-r from-gradient-begin via-gradient-middle to-gradient-end dark:from-gradient-begin dark:to-gradient-end',
+          inriaSans.className,
+        )}
+      >
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );
+}
+
+function getProperLang(lang: string | null): 'en' | 'pl' {
+  switch (lang) {
+    case 'pl-PL':
+    case 'pl':
+      return 'pl';
+
+    case 'en-GB':
+    case 'en-US':
+    case 'en':
+    default:
+      return 'en';
+  }
 }

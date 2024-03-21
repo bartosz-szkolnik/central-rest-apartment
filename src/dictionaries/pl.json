@@ -1,6 +1,6 @@
 {
   "HERO": {
-    "TITLE": "Apartament Central Rest w Pafos"
+    "TITLE": "Apartament Central Rest w Pafos"
   },
   "ABOUT_THE_APARTMENT": {
     "TITLE": "O mieszkaniu: ",
@@ -17,26 +17,26 @@
   },
   "TOURIST_ATTRACTIONS": {
     "TITLE": "Atrakcje Turystyczne:",
-    "INFO": "Additionaly there are many popular points of interest near the apartment which include:",
+    "INFO": "Dodatkowo w pobliżu apartamentu znajduje się wiele popularnych atrakcji, m.in.:",
     "THE_HARBOR": {
-      "TITLE": "The Harbor",
-      "CONTENT": "The Paphos Harbor which is filled with various restaurants and cafés"
+      "TITLE": "Port",
+      "CONTENT": "Port w Pafos, w którym znajduje się wiele restauracji i kawiarni"
     },
     "SARANDA_KOLONES_CASTLE": {
-      "TITLE": "Saranda Kolones Castle",
-      "CONTENT": "This ruined medieval fortress in the Paphos Archaeological Park"
+      "TITLE": "Zamek w Sarandzie Kolones",
+      "CONTENT": "To nadgryziona zębem czasu średniowieczna forteca w Parku Archeologicznym w Pafos"
     },
     "MITROPOLIS_OF_PATHOS": {
-      "TITLE": "Mitropolis of Paphos",
-      "CONTENT": "Ancient archeological findings which have stood for thousands of years"
+      "TITLE": "Metropolia Pafos",
+      "CONTENT": "Starożytne znaleziska archeologiczne, które przetrwały tysiące lat"
     },
     "28_OCTOVRIOU_SQUARE": {
-      "TITLE": "28 Octovriou Square",
-      "CONTENT": "The Heart of the City and the location of City Centre"
+      "TITLE": "Plac Octovriou 28",
+      "CONTENT": "Serce Miasta i lokalizacja Śródmieścia"
     },
     "ST_PAULS_PILLAR": {
-      "TITLE": "St. Paul’s Pillar",
-      "CONTENT": "Ancient Religious monument"
+      "TITLE": "Kolumna Św. Pawła",
+      "CONTENT": "Starożytny zabytek religijny"
     },
     "MANY_MORE": "i wiele więcej!"
   },
@@ -44,7 +44,6 @@
     "INTERESTED": "Zainteresowany?",
     "GOT_MORE_QUESTIONS": "Masz więcej pytań?",
     "CONTACT_US": "Zadzwoń lub napisz do nas!",
-    "CONTACT_INFO": "Informacje kontaktowe:",
     "WHATS_APP_NUMBER": "Numer WhatsApp: ",
     "LOCAL_NUMBER_IN_PAPHOS": "Lokalny numer w Pafos: ",
     "EMAIL_ADDRESS": "Adres E-mail : ",
@@ -52,5 +51,15 @@
     "CYPRUS": "Cypr",
     "OR_LOOK_AT_GOOGLE_MAPS": "Albo spójrz na mapach Google",
     "WHERE_APARTMENT_IS_LOCATED": "Gdzie apartament się znajduje: "
+  },
+  "SETTINGS": {
+    "TITLE": "Tutaj możesz zmienić swoje ustawienia",
+    "CHOOSE_LANGUAGE": "Wybierz język",
+    "ENGLISH": "Angielski",
+    "POLISH": "Polski",
+    "TOGGLE_THEME": "Wybiezrz motyw",
+    "LIGHT_THEME": "Jasny motyw",
+    "DARK_THEME": "Ciemny motyw",
+    "SYSTEM_THEME": "Użyj motywu urządzenia"
   }
 }

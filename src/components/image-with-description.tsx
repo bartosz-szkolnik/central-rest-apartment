@@ -14,7 +14,7 @@ export function ImageWithDescription({ alt, src, subtitle, description, textOrie
   return (
     <>
       <div className="block md:hidden">
-        <div className="mt-20 flex flex-col gap-4">
+        <div className="mt-16 flex flex-col gap-4">
           <div className="col-span-1 flex flex-col items-center justify-center">
             <Subtitle>{subtitle}</Subtitle>
             <Paragraph className="mt-2 px-5 text-center text-sm">{description}</Paragraph>
@@ -30,7 +30,7 @@ export function ImageWithDescription({ alt, src, subtitle, description, textOrie
       </div>
 
       <div className="aria-hidden hidden md:block">
-        <div className=" mt-20 grid grid-cols-1 gap-x-6 md:grid-cols-4">
+        <div className="mt-20 grid grid-cols-1 gap-x-6 md:grid-cols-4">
           {textOrientation === 'left' && (
             <div className="col-span-1 flex flex-col items-center justify-center">
               <Subtitle>{subtitle}</Subtitle>

@@ -23,15 +23,18 @@ export function middleware(request: NextRequest) {
   // Check if there is any supported locale in the pathname
   const pathnameHasLocale = locales.some(locale => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`);
 
-  if (pathnameHasLocale) return;
+  const requestHeaders = new Headers(request.headers);
+  const [, , , lang] = request.url.split('/');
+  requestHeaders.set('x-lang', lang);
 
   // Redirect if there is no locale
-  const locale = getLocale(request);
+  if (pathnameHasLocale) return NextResponse.next({ request: { headers: requestHeaders } });
 
+  const locale = getLocale(request);
   request.nextUrl.pathname = `/${locale}${pathname}`;
   // e.g. incoming request is /products
   // The new URL is now /en-US/products
-  return NextResponse.redirect(request.nextUrl);
+  return NextResponse.redirect(request.nextUrl, { headers: requestHeaders });
 }
 
 export const config = {

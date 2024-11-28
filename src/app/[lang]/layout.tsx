@@ -2,6 +2,7 @@ import { type Metadata } from 'next';
 import { Inria_Sans } from 'next/font/google';
 import { cn } from '@lib/utils';
 import { ThemeProvider } from '../../providers/theme-provider';
+import { Analytics } from '@vercel/analytics/react';
 import '../../styles/globals.css';
 
 const inriaSans = Inria_Sans({ subsets: ['latin-ext'], weight: ['400', '700'], variable: '--font-sans' });
@@ -29,6 +30,7 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           {children}
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   );
